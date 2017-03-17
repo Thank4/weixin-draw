@@ -1,0 +1,115 @@
+@charset "UTF-8";
+*{margin:0;padding:0;}
+body{font-size:12px;font-family: "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;}
+a{color:#333;}
+ul{list-style:none;}
+.hr1{ height: 0; border: 1px dashed #a17b22; margin: 10px auto;}
+
+.bg{width: 100%;height: 100%;position: absolute;background: #231B1B;z-index:-1}
+.shadow{box-shadow: 5px 5px 50px #888888;border-radius: 10px;}
+
+/**header***/
+.header{width: 100%;min-width: 800px;margin:0 0 100px 0;background: rgba(0, 0, 0, 0.2)}
+.header-center{width: 760px;margin: 0 auto;padding:10px 20px;overflow: hidden}
+.header-title{float: left;}
+.header-img{float: right}
+
+.center{margin: 0 auto; color: #ffffff; background-color: #FF5722;  height: 30px;    border-radius: 2px;width:60px;
+    cursor: pointer;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 12px;}
+.center:hover{opacity: .8;
+    filter: alpha(opacity=80);
+    color: #fff;}
+
+
+
+.chooseContainer{width: 380px;margin: 10px}
+.chooseStyle{display: inline-block;margin-right: 10px;cursor: pointer;border: 3px solid rgba(128, 128, 128, 0.6);color:#808080;}
+.chooseStyle img {}
+
+
+
+/**微信墙**/
+.WeiWall{width:1200px;margin: 0 auto;}
+.WallTitle{font-size: 18px;color: #ffffff;letter-spacing: 10px;}
+.useinfo{float: left}
+.w_name{color: #ffffff;text-align: center;margin: 10px 0}
+.w_city{text-align: center;line-height: 90px;display: inline-block;height: 90px;margin-left: 50px}
+.w_time{display: inline-block;float: right;line-height: 90px;height: 90px}
+.count{font-size: 18px;margin: 10px auto;color: #ffffff;letter-spacing: 20px;}
+.countNow{color: green;font-size: 40px;letter-spacing: 2px}
+.marquee{top:150px;left:400px;width:1200px;height: 600px; color: #ffffff;  overflow:hidden;background: rgba(0, 0, 0, 0.2);}
+.marquee ul li{ width:1000px; padding:15px 30px; line-height:20px;margin: 0 auto}
+
+
+
+
+/**Draw**/
+.WeiDraw{width: 1400px;margin:50px auto}
+.DrawLeft{width: 300px;display: inline-block;padding:20px; vertical-align:top;background: rgba(0, 0, 0, 0.5);}
+.DrawLeft label{color: #ffffff}
+
+.startData{margin-left: 110px;margin-bottom: 15px}
+.startBtn{margin-left: 110px}
+.stopBtn{margin-left: 110px}
+
+.hidePrize{width:190px;height:38px;background: rgba(0, 0, 0, 0.5);position: absolute;top: 0}
+.hideNum{width:190px;height:38px;background: rgba(0, 0, 0, 0.5);position: absolute;top: 0}
+
+.DrawRight{width: 900px;height:400px;display: inline-block;vertical-align:top;margin-left:50px;padding: 20px;background: rgba(0, 0, 0, 0.5);}
+.DrawOne{margin: 0 auto}
+.DrawOneImg{width: 140px;margin: 20px auto}
+.DrawOneImg img{margin: 50px 0; box-shadow:0 0 8px #333;}
+.DrawOne img{margin: 50px 0; box-shadow:0 0 8px #333;}
+.DrawName{margin: 10px auto;width: 100px;display: block}
+
+.DrawThree{display:flex;          /*firefox以及新版浏览器统一标签，低版本的只能使用css hack 添加私有属性来进行兼容*/
+           display: -webkit-flex; /*chrome safari*/
+           display: -ms-flexbox;  /**兼容IE10**/}
+.DrawThreeList{width: 70px;flex: 1;-webkit-flex:1;-ms-flex:1;text-align: center}
+
+.DrawFive{display:flex; /*firefox以及新版浏览器统一标签，低版本的只能使用css hack 添加私有属性来进行兼容*/
+          display: -webkit-flex; /*chrome safari*/
+          display: -ms-flexbox;  /**兼容IE10**/}
+.DrawFiveList{width: 70px;flex: 1;-webkit-flex:1;-ms-flex:1;text-align: center  }
+
+
+
+
+
+/**controller**/
+.controller-menu{width:100%;height: 80px;background: rgba(0, 0, 0, 0.7);position: fixed;bottom: 0}
+.controller-close{width:50px;height:50px;text-align:center;line-height:45px;border-radius:50%;box-shadow:0 0 8px #333;background:#000;opacity:0.7;transform:rotate(45deg);
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari and Chrome */
+    transition:All 0.4s ease-in-out;
+    -webkit-transition:All 0.4s ease-in-out;
+    -moz-transition:All 0.4s ease-in-out;
+    -o-transition:All 0.4s ease-in-out;
+    color:#54ff00;font-size: 45px;position: absolute;top: 0;right: 0;cursor: pointer}
+.controller-close:hover{transform:rotate(405deg);
+    -webkit-transform:rotate(405deg);
+    -moz-transform:rotate(405deg);
+    -o-transform:rotate(405deg);
+    -ms-transform:rotate(405deg);}
+.controller-button{width: 500px;height:80px;margin: 0 auto;line-height: 80px}
+.btn-menu{width: 32px;height: 32px;margin:20px 20px;border:2px solid rgb(255, 255, 255);line-height: 80px; display:inline-block;cursor: pointer}
+.btnSkin{background: url(../img/Icons.png) no-repeat -1px -2px;}
+.btnWall{background: url(../img/Icons.png) no-repeat -98px -2px;}
+.btnDraw{background: url(../img/Icons.png) no-repeat -146px -3px;}
+.btnVote{background: url(../img/zan.png) no-repeat 2px; }
+.btnScreen{background: url(../img/Icons.png) no-repeat -338px -2px;}
+
+.controller-open{width:50px;height:50px;text-align:center;line-height:45px;border-radius:50%;box-shadow:0 0 8px #333;background:#000;opacity:0.7;position:fixed;left:10px;bottom:30px;color:#54ff00;font-size:45px;display:none;cursor:pointer;
+    transition:All 0.4s ease-in-out;
+    -webkit-transition:All 0.4s ease-in-out;
+    -moz-transition:All 0.4s ease-in-out;
+    -o-transition:All 0.4s ease-in-out;
+}
+.controller-open:hover{transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);}
